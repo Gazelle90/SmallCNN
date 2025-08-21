@@ -1,23 +1,10 @@
 # SmallCNN
 A CNN predicting labels for the given test images
-This repo trains a CNN (scratch or pretrained torchvision model) on `./data/Task2`
+This repo trains a CNN  on `./data/Task2`
 and writes `submission.csv` with a `predictions` column.
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yYJDnulN6nyuOqB7NYJrDACXbfp91DNA?usp=sharing)
-
-
-## Quickstart (Colab)
-Click the badge above. In the notebook:
-1) Run the setup cell (clones this repo + installs deps).
-2) Provide the data to `/content/data/Task2/` (see Data Options cell).
-3) Run training; inference writes `submission.csv`.
-
-
-
-This project was part of an ML course assignment, where the task was to train a CNN on a real dataset of 32×32 images (~5400 train / 600 test). While pretrained models like DenseNet were allowed, I wanted to build and refine my own CNN from scratch.
-What started as a simple training script turned into a deep dive into optimizers, learning rates, regularization, and augmentation. Through iteration and careful tuning, I improved performance from ~50% F1 to over 70% F1.
-
 
 ## Dataset  
 This project uses the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).  
@@ -25,6 +12,18 @@ The dataset is licensed under the MIT license by the University of Toronto.
 
 Due to file size restrictions, the dataset is **not included in this repository**.  
 To use the project, download the dataset and place it in the `data/` folder:
+
+## Quickstart (Colab)
+Click the badge above. In the notebook:
+1) Run the setup cell (clones this repo + installs deps).
+2) Provide the data to `/content/SmallCNN/data` (see Data Options cell).
+3) Run training; inference writes `submission.csv`.
+
+
+
+This project was part of an ML course assignment, where the task was to train a CNN on a real dataset of 32×32 images (~5400 train / 600 test). While pretrained models like DenseNet were allowed, I wanted to build and refine my own CNN from scratch.
+What started as a simple training script turned into a deep dive into optimizers, learning rates, regularization, and augmentation. Through iteration and careful tuning, I improved performance from ~50% F1 to over 70% F1.
+
 
 
 Training Pipeline
