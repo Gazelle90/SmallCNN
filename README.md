@@ -19,17 +19,12 @@ This project was part of an ML course assignment, where the task was to train a 
 What started as a simple training script turned into a deep dive into optimizers, learning rates, regularization, and augmentation. Through iteration and careful tuning, I improved performance from ~50% F1 to over 70% F1.
 
 
-Projects Structure 
+## Dataset  
+This project uses the [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html).  
+The dataset is licensed under the MIT license by the University of Toronto.  
 
-
-├── train_data.npy         # Flattened training images
-├── train_labels.npy       # Training labels
-├── test_data.npy          # Test images
-├── model.py               # CNN architecture
-├── train.py               # Training & validation loop
-├── utils.py               # Helpers (dataset class, transforms)
-├── submission.csv         # Test predictions
-└── README.md              # This file
+Due to file size restrictions, the dataset is **not included in this repository**.  
+To use the project, download the dataset and place it in the `data/` folder:
 
 
 Training Pipeline
